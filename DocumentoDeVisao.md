@@ -18,35 +18,29 @@ Caicó – RN
 
 # **Sumário** {#sumário}
 
-[**Documento de Visão	1**](#documento-de-visão)
+- [**Sumário	2**](#sumário)
 
-[**Sumário	2**](#sumário)
+- [**Histórico de revisõe 3**](#histórico-de-revisões)
 
-[**Histórico de revisões	3**](#histórico-de-revisões)
+- [**Equipe e Definição de Papéis 3**](#equipe-e-definição-de-papéis)
 
-[**Equipe e Definição de Papéis	3**](#equipe-e-definição-de-papéis)
+- [Matriz de Competências 3](#matriz-de-competências)
 
-[Matriz de Competências	3](#matriz-de-competências)
+- [**Descrição do Projeto 3**](#descrição-do-projeto)
 
-[**Descrição do Projeto	3**](#descrição-do-projeto)
+- [Perfis dos Usuários 4](#perfis-dos-usuários)
 
-[Perfis dos Usuários	4](#perfis-dos-usuários)
+- [Perfil de administrador 4](#perfil-de-administrador)
 
-[Perfil de administrador	4](#perfil-de-administrador)
+- [Perfil de usuário 4](#perfil-de-usuário)
 
-[Perfil de usuário	4](#perfil-de-usuário)
+- [**Requisitos Funcionais 4**](#requisitos-funcionais)
 
-[**Requisitos Funcionais	4**](#requisitos-funcionais)
+- [**Requisitos não-Funcionais 5**](#requisitos-não-funcionais)
 
-[**Requisitos não-Funcionais	5**](#requisitos-não-funcionais)
+- [**Riscos 5**](#riscos)
 
-[**Riscos	5**](#riscos)
 
-# 
-
-# 
-
-# 
 
 # **Histórico de revisões** {#histórico-de-revisões}
 
