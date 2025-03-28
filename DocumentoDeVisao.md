@@ -1,22 +1,17 @@
-<center>
-UNIVERSIDADE FEDERAL DO RIO GRANDE DO NORTE  <br>
-CENTRO DE ENSINO SUPERIOR DO SERIDÓ  <br>
-DEPARTAMENTO DE COMPUTAÇÃO E TECNOLOGIA  <br> 
-CURSO DE BACHARELADO EM SISTEMAS DE INFORMAÇÃO <br>
-</center>
+UNIVERSIDADE FEDERAL DO RIO GRANDE DO NORTE  
+CENTRO DE ENSINO SUPERIOR DO SERIDÓ  
+DEPARTAMENTO DE COMPUTAÇÃO E TECNOLOGIA  
+CURSO DE BACHARELADO EM SISTEMAS DE INFORMAÇÃO
 
 # **Documento de Visão**
 
 ## **Componentes**:
 
-<center>
-EMANUEL ALVES DE MEDEIROS  <br>
-JUAN VITÓRIO DUTRA DE ARAÚJO  <br>
-MARLISON SOARES DA SILVA  <br>
-MATHEUS DINIZ FERNANDES  <br>
+EMANUEL ALVES DE MEDEIROS <br>
+JUAN VITÓRIO DUTRA DE ARAÚJO <br>
+MARLISON SOARES DA SILVA <br>
+MATHEUS DINIZ FERNANDES <br>
 MAXSUEL GADELHA OLIVEIRA DA SILVA <br>
-
-</center>
 
 # **Sumário**
 
@@ -30,7 +25,7 @@ MAXSUEL GADELHA OLIVEIRA DA SILVA <br>
 - [**Matriz de Competências**](#matriz-de-competências-1)
 - [**Perfis dos Usuários**](#perfis-dos-usuários)
 - [**Requisitos Funcionais**](#requisitos-funcionais)
-  - [Entidade Centro - US01 - Manter Cliente](#entidade-centro---us01---manter-cliente)
+  - [Entidade Cliente - US01 - Manter Cliente](#entidade-cliente---us01---manter-cliente)
 - [**Requisitos Não-Funcionais**](#requisitos-não-funcionais)
 - [**Riscos**](#riscos)
 
@@ -87,16 +82,16 @@ O projeto Caderneta Virtual de Vendas (CVV) é um sistema de gerenciamento desen
 
 # **Requisitos Funcionais**
 
-### Entidade Centro - US01 - Manter Cliente
+### Entidade Cliente - US01 - Manter Cliente
 
 Cliente representa os consumidores da empresa, a qual necessita conte seu nome,cpf,telefone e endereço.
 
-| Requisito                  | Descrição                                                                | Ator                   |
-| -------------------------- | ------------------------------------------------------------------------ | ---------------------- |
-| RF01.01 - Inserir Cliente  | Insere novo cliente informando: nome, telefone,cpf e endereço.           | Administrador,Usuário. |
-| RF01.02 - Listar Clientes  | Listagem dos Clientes utilizando filtros nos atributos: Nome e endereço. | Administrador          |
-| RF01.03 - Atualizar Centro | Atualiza um Cliente informando: nome, telefone,cpf e endereço.           | Administrador,Usuário. |
-| RF01.04 - Deletar Centro   | Deleta um Cliente informando o CPF.                                      | Administrador,Usuário  |
+| Requisito                   | Descrição                                                                | Ator                   |
+| --------------------------- | ------------------------------------------------------------------------ | ---------------------- |
+| RF01.01 - Inserir Cliente   | Insere novo cliente informando: nome, telefone,cpf e endereço.           | Administrador,Usuário. |
+| RF01.02 - Listar Clientes   | Listagem dos Clientes utilizando filtros nos atributos: Nome e endereço. | Administrador          |
+| RF01.03 - Atualizar Cliente | Atualiza um Cliente informando: nome, telefone,cpf e endereço.           | Administrador,Usuário. |
+| RF01.04 - Deletar Cliente   | Deleta um Cliente informando o CPF.                                      | Administrador,Usuário  |
 
 # **Requisitos Não-Funcionais**
 
