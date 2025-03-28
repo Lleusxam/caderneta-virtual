@@ -1,44 +1,41 @@
-UNIVERSIDADE FEDERAL DO RIO GRANDE DO NORTE  
-CENTRO DE ENSINO SUPERIOR DO SERIDÓ  
-DEPARTAMENTO DE COMPUTAÇÃO E TECNOLOGIA  
-CURSO DE BACHARELADO EM SISTEMAS DE INFORMAÇÃO
+<center>
+UNIVERSIDADE FEDERAL DO RIO GRANDE DO NORTE  <br>
+CENTRO DE ENSINO SUPERIOR DO SERIDÓ  <br>
+DEPARTAMENTO DE COMPUTAÇÃO E TECNOLOGIA  <br> 
+CURSO DE BACHARELADO EM SISTEMAS DE INFORMAÇÃO <br>
+</center>
 
 # **Documento de Visão**
 
-EMANUEL ALVES DE MEDEIROS  
-JUAN VITÓRIO DUTRA DE ARAÚJO  
-MARLISON SOARES DA SILVA  
-MATHEUS DINIZ FERNANDES  
-MAXSUEL GADELHA OLIVEIRA DA SILVA
+## **Componentes**:
 
-**CONTROLE DE VENDAS DE UTENSÍLIOS DE COZINHA**
+<center>
+EMANUEL ALVES DE MEDEIROS  <br>
+JUAN VITÓRIO DUTRA DE ARAÚJO  <br>
+MARLISON SOARES DA SILVA  <br>
+MATHEUS DINIZ FERNANDES  <br>
+MAXSUEL GADELHA OLIVEIRA DA SILVA <br>
 
-Caicó – RN  
-2025
+</center>
 
-# **Sumário** {#sumário}
+# **Sumário**
 
 - [**Documento de Visão**](#documento-de-visão)
-- [**Sumário** {#sumário}](#sumário-sumário)
-- [**Histórico de revisões**](#histórico-de-revisões)
+  - [**Componentes**:](#componentes)
+- [**Sumário**](#sumário)
+- [**Descrição do Projeto**](#descrição-do-projeto)
 - [**Equipe e Definição de Papéis**](#equipe-e-definição-de-papéis)
 - [**Matriz de Competências**](#matriz-de-competências)
-- [**Descrição do Projeto**](#descrição-do-projeto)
-- [](#)
+- [**Histórico de revisões**](#histórico-de-revisões)
+- [**Matriz de Competências**](#matriz-de-competências-1)
 - [**Perfis dos Usuários**](#perfis-dos-usuários)
-  - [**Perfil de administrador**](#perfil-de-administrador)
-  - [**Perfil de usuário**](#perfil-de-usuário)
 - [**Requisitos Funcionais**](#requisitos-funcionais)
-- [](#-1)
 - [**Requisitos Não-Funcionais**](#requisitos-não-funcionais)
-- [](#-2)
 - [**Riscos**](#riscos)
 
-# **Histórico de revisões**
+# **Descrição do Projeto**
 
-| Data       | Versão | Descrição         |                                     Autor                                     |
-| ---------- | ------ | ----------------- | :---------------------------------------------------------------------------: |
-| 12/12/2024 | 1.0    | Documento inicial | Emanuel Alves, Juan Vitório, Marlison Soares, Matheus Diniz e Maxsuel Gadelha |
+O projeto Caderneta Virtual de Vendas (CVV) é um sistema de gerenciamento desenvolvido para um pequeno comércio que comercializa produtos domésticos da marca Tupperware. Seu objetivo é automatizar processos que antes eram realizados manualmente, aproveitando as vantagens de um software para melhorar a eficiência e reduzir erros. A proprietária enfrentava dificuldades no controle de pagamentos, especialmente no que se refere a clientes com dívidas pendentes. O sistema irá armazenar os dados cadastrais dos clientes, informações sobre os produtos à venda e o histórico de vendas. Ele também permitirá o acompanhamento detalhado dos pagamentos, com a identificação de clientes adimplentes, inadimplentes e com parcelas em aberto. Além disso, o software incluirá relatórios periódicos sobre os produtos mais vendidos, os devedores e o status de quitação das dívidas, proporcionando um controle mais eficaz do fluxo financeiro do comércio.
 
 # **Equipe e Definição de Papéis**
 
@@ -63,21 +60,29 @@ Caicó – RN
 | Matheus Diniz Fernandes           | Design, Desenvolvedor Web                 |
 | Maxsuel Gadelha Oliveira da Silva | Desenvolvedor Django, React, React-Native |
 
-# **Descrição do Projeto**
+# **Histórico de revisões**
 
-O projeto Caderneta Virtual de Vendas (CVV) é um sistema de gerenciamento desenvolvido para um pequeno comércio que comercializa produtos domésticos da marca Tupperware. Seu objetivo é automatizar processos que antes eram realizados manualmente, aproveitando as vantagens de um software para melhorar a eficiência e reduzir erros. A proprietária enfrentava dificuldades no controle de pagamentos, especialmente no que se refere a clientes com dívidas pendentes. O sistema irá armazenar os dados cadastrais dos clientes, informações sobre os produtos à venda e o histórico de vendas. Ele também permitirá o acompanhamento detalhado dos pagamentos, com a identificação de clientes adimplentes, inadimplentes e com parcelas em aberto. Além disso, o software incluirá relatórios periódicos sobre os produtos mais vendidos, os devedores e o status de quitação das dívidas, proporcionando um controle mais eficaz do fluxo financeiro do comércio.
+| Data       | Versão | Descrição         |                                     Autor                                     |
+| ---------- | ------ | ----------------- | :---------------------------------------------------------------------------: |
+| 12/12/2024 | 1.0    | Documento inicial | Emanuel Alves, Juan Vitório, Marlison Soares, Matheus Diniz e Maxsuel Gadelha |
 
-#
+# **Matriz de Competências**
+
+| Equipe                            | Competências                              |
+| :-------------------------------- | :---------------------------------------- |
+| Taciano de Morais Silva           | Engenharia de Software                    |
+| Emanuel Alves de Medeiros         | Desenvolvedor Django, SwiftUI.            |
+| Juan Vitório Dutra de Araújo      | Designer, desenvolvedor Django, Web       |
+| Marlison Soares da Silva          | Desenvolvedor Back-end, Laravel, React    |
+| Matheus Diniz Fernandes           | Design, Desenvolvedor Web                 |
+| Maxsuel Gadelha Oliveira da Silva | Desenvolvedor Django, React, React-Native |
 
 # **Perfis dos Usuários**
 
-## **Perfil de administrador**
-
-O administrador terá acesso a todas as funcionalidades envolvendo o controle de clientes, produtos, vendas, consórcios e pagamentos.
-
-## **Perfil de usuário**
-
-O usuário terá acesso a funções superficiais do sistema: terá o controle do andamento dos seus pagamentos, fiados pendentes, um histórico dos produtos comprados, a consulta de suas despesas e produtos, a visualização de seu histórico de compras, seu perfil de usuário, dentre outras funções comuns em sistemas de consulta.
+| **Perfil**        | **Descrição**                                                                                                                                                                                                                                                                                                                      |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Administrador** | O administrador terá acesso a todas as funcionalidades envolvendo o controle de clientes, produtos, vendas, consórcios e pagamentos.                                                                                                                                                                                               |
+| **Usuário**       | O usuário terá acesso a funções superficiais do sistema: terá o controle do andamento dos seus pagamentos, fiados pendentes, um histórico dos produtos comprados, a consulta de suas despesas e produtos, a visualização de seu histórico de compras, seu perfil de usuário, dentre outras funções comuns em sistemas de consulta. |
 
 # **Requisitos Funcionais**
 
@@ -93,8 +98,6 @@ O usuário terá acesso a funções superficiais do sistema: terá o controle do
 | RF08   | Enviar notificação | O sistema deve implementar um método de notificação destinado aos usuários com o intuito de avisar sobre o registro de cobranças novas e atrasadas, pagamentos registrados e alteração de dados do usuário.                    | Equipe    |
 | RF09   | Manter consórcio   | O administrador deve poder cadastrar um consórcio e registrar pessoas nele. As pessoas adicionadas ao consórcio recebem uma cobrança mensal por uma compra no valor total do consórcio.                                        | Equipe    |
 
-#
-
 # **Requisitos Não-Funcionais**
 
 | Código | Nome             | Descrição                                                                                                                                                    |
@@ -102,8 +105,6 @@ O usuário terá acesso a funções superficiais do sistema: terá o controle do
 | RNF01  | Responsividade   | O design do sistema deve se adaptar a diversos tamanhos de tela, permitindo o acesso através de computadores, tablets e smartphones.                         |
 | RNF02  | Segurança        | Garantir a segurança dos dados dos clientes, por meio de criptografia e controle de acesso.                                                                  |
 | RNF03  | Manutenabilidade | Deve ser fácil de manter e atualizar, com um código bem estruturado e documentado, facilitando a correção de erros e implementação de novas funcionalidades. |
-
-#
 
 # **Riscos**
 
