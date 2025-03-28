@@ -26,6 +26,7 @@ MAXSUEL GADELHA OLIVEIRA DA SILVA <br>
 - [**Perfis dos Usuários**](#perfis-dos-usuários)
 - [**Requisitos Funcionais**](#requisitos-funcionais)
   - [Entidade Cliente - US01 - Manter Cliente](#entidade-cliente---us01---manter-cliente)
+  - [Entidade Cliente - US02 - Manter Produto](#entidade-cliente---us02---manter-produto)
 - [**Requisitos Não-Funcionais**](#requisitos-não-funcionais)
 - [**Riscos**](#riscos)
 
@@ -84,7 +85,7 @@ O projeto Caderneta Virtual de Vendas (CVV) é um sistema de gerenciamento desen
 
 ### Entidade Cliente - US01 - Manter Cliente
 
-Cliente representa os consumidores da empresa, a qual necessita conte seu nome,cpf,telefone e endereço.
+Cliente representa os consumidores da empresa, a qual necessita conte seu Nome,Cpf,Telefone e Endereço.
 
 | Requisito                   | Descrição                                                                | Ator                   |
 | --------------------------- | ------------------------------------------------------------------------ | ---------------------- |
@@ -92,6 +93,17 @@ Cliente representa os consumidores da empresa, a qual necessita conte seu nome,c
 | RF01.02 - Listar Clientes   | Listagem dos Clientes utilizando filtros nos atributos: Nome e endereço. | Administrador          |
 | RF01.03 - Atualizar Cliente | Atualiza um Cliente informando: nome, telefone,cpf e endereço.           | Administrador,Usuário. |
 | RF01.04 - Deletar Cliente   | Deleta um Cliente informando o CPF.                                      | Administrador,Usuário  |
+
+### Entidade Cliente - US02 - Manter Produto
+
+O sistema deve manter um cadastro dos produtos ofertados.Um produto tem os atributos Código, Nome, Categoria,Cor,Descrição do produto,Tamanho e Capacidade.
+
+| Requisito                   | Descrição                                                                                        | Ator           |
+| --------------------------- | ------------------------------------------------------------------------------------------------ | -------------- |
+| RF01.01 - Inserir Produto   | Insere novo Produto informando: Nome, Categoria,Cor,Descrição do produto,Tamanho e Capacidade    | Administrador. |
+| RF01.02 - Listar Produtos   | Listagem dos Produtos utilizando filtros nos atributos: Nome,Categoria,Cor,Tamanho e Capacidade. | Administrador  |
+| RF01.03 - Atualizar Produto | Atualiza um Produto informando: Nome, Categoria,Cor,Descrição do produto,Tamanho e Capacidade.   | Administrador. |
+| RF01.04 - Deletar Produto   | Deleta um Produto informando o Código.                                                           | Administrador, |
 
 # **Requisitos Não-Funcionais**
 
