@@ -30,6 +30,7 @@ MAXSUEL GADELHA OLIVEIRA DA SILVA <br>
 - [**Matriz de Competências**](#matriz-de-competências-1)
 - [**Perfis dos Usuários**](#perfis-dos-usuários)
 - [**Requisitos Funcionais**](#requisitos-funcionais)
+  - [Entidade Centro - US01 - Manter Cliente](#entidade-centro---us01---manter-cliente)
 - [**Requisitos Não-Funcionais**](#requisitos-não-funcionais)
 - [**Riscos**](#riscos)
 
@@ -86,17 +87,16 @@ O projeto Caderneta Virtual de Vendas (CVV) é um sistema de gerenciamento desen
 
 # **Requisitos Funcionais**
 
-| Código | Nome               | Descrição                                                                                                                                                                                                                      | Ator      |
-| :----- | :----------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------- |
-| RF01   | Manter cliente     | O proprietário deve estar apto a realizar o cadastro de clientes. Possibilitando ver, buscar, registrar, deletar e editar os dados dos compradores. São exemplos de dados registrados: nome, CPF, meios de contato e endereço. | Equipe    |
-| RF02   | Manter produto     | O proprietário deve poder ver, buscar, inserir, remover e alterar os dados referentes ao produtos ofertados, sendo esses dados, essencialmente: nome, tipo e preço do produto.                                                 | Equipe    |
-| RF03   | Manter venda       | O proprietário deve poder ver, buscar, inserir, remover e alterar vendas de produtos realizadas para clientes do sistema.                                                                                                      | Luzineide |
-| RF04   | Manter cobrança    | O sistema deve gerar cobranças sobre as vendas dos clientes, considerando a forma de pagamento especificada.                                                                                                                   | Luzineide |
-| RF05   | Manter pagamento   | O proprietário deve conseguir registrar o pagamento das cobranças sobre uma venda registrada no sistema.                                                                                                                       | Luzineide |
-| RF06   | Manter login       | Os usuários devem conseguir realizar login no sistema e o proprietário deve poder cadastrar, editar e excluir o login de clientes.                                                                                             | Equipe    |
-| RF07   | Gerar relatório    | Deve gerar relatórios, como, de clientes cadastrados, produtos ofertados, vendas por período, clientes com pagamentos pendentes, clientes com mais compras finalizadas, entre outros, para análise e tomada de decisão.        | Luzineide |
-| RF08   | Enviar notificação | O sistema deve implementar um método de notificação destinado aos usuários com o intuito de avisar sobre o registro de cobranças novas e atrasadas, pagamentos registrados e alteração de dados do usuário.                    | Equipe    |
-| RF09   | Manter consórcio   | O administrador deve poder cadastrar um consórcio e registrar pessoas nele. As pessoas adicionadas ao consórcio recebem uma cobrança mensal por uma compra no valor total do consórcio.                                        | Equipe    |
+### Entidade Centro - US01 - Manter Cliente
+
+Cliente representa os consumidores da empresa, a qual necessita conte seu nome,cpf,telefone e endereço.
+
+| Requisito                  | Descrição                                                                | Ator                   |
+| -------------------------- | ------------------------------------------------------------------------ | ---------------------- |
+| RF01.01 - Inserir Cliente  | Insere novo cliente informando: nome, telefone,cpf e endereço.           | Administrador,Usuário. |
+| RF01.02 - Listar Clientes  | Listagem dos Clientes utilizando filtros nos atributos: Nome e endereço. | Administrador          |
+| RF01.03 - Atualizar Centro | Atualiza um Cliente informando: nome, telefone,cpf e endereço.           | Administrador,Usuário. |
+| RF01.04 - Deletar Centro   | Deleta um Cliente informando o CPF.                                      | Administrador,Usuário  |
 
 # **Requisitos Não-Funcionais**
 
