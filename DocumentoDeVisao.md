@@ -100,10 +100,10 @@ O sistema deve manter um cadastro dos produtos ofertados.Um produto tem os atrib
 
 | Requisito                   | Descrição                                                                                        | Ator           |
 | --------------------------- | ------------------------------------------------------------------------------------------------ | -------------- |
-| RF01.01 - Inserir Produto   | Insere novo Produto informando: Nome, Categoria,Cor,Descrição do produto,Tamanho e Capacidade    | Administrador. |
-| RF01.02 - Listar Produtos   | Listagem dos Produtos utilizando filtros nos atributos: Nome,Categoria,Cor,Tamanho e Capacidade. | Administrador  |
-| RF01.03 - Atualizar Produto | Atualiza um Produto informando: Nome, Categoria,Cor,Descrição do produto,Tamanho e Capacidade.   | Administrador. |
-| RF01.04 - Deletar Produto   | Deleta um Produto informando o Código.                                                           | Administrador, |
+| RF02.01 - Inserir Produto   | Insere novo Produto informando: Nome, Categoria,Cor,Descrição do produto,Tamanho e Capacidade    | Administrador. |
+| RF02.02 - Listar Produtos   | Listagem dos Produtos utilizando filtros nos atributos: Nome,Categoria,Cor,Tamanho e Capacidade. | Administrador  |
+| RF02.03 - Atualizar Produto | Atualiza um Produto informando: Nome, Categoria,Cor,Descrição do produto,Tamanho e Capacidade.   | Administrador. |
+| RF02.04 - Deletar Produto   | Deleta um Produto informando o Código.                                                           | Administrador, |
 
 # **Requisitos Não-Funcionais**
 
