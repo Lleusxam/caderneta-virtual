@@ -254,6 +254,25 @@ O sistema terá o papel de criar as cobranças com base nas vendas realizadas.
 
 ### Entidade Consórcio - US05 - Manter Consórcio
 
+O proprietário poderá excluir, editar, cadastrar e buscar informações relacionadas a consórcios atrelados a grupos de clientes.
+
+| Requisito                  | Descrição                                                                                                                                                    | Ator          |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- |
+| RF05.01 - Inserir Consórcio | O administrador irá adicionar pessoas ao consórcio e mensalmente elas receberão uma cobrança por uma compra no valor total do consórcio. | Administrador.      |
+| RF05.02 - Listar Consórcio  | O sistema irá mostrar uma lista do consórcios ativos no momento.                                                      | Administrador |
+| RF05.03 - Editar Consórcio  | O administraor vai buscar o consórcio e enviiar as alterações, aí o sistema irá analisar e validar.                  | Administrador |
+| RF05.04 - Excluir Consórcio | Caso o consórcio já tenha sido iniciado, a exclusão não será possível.                                               | Administrador |
+
+### Entidade Consórcio - US06 - Manter Pagamento
+
+O sistema vai registrar os pagamentos relacionados a uma cobrança. O administrador pode digitar o nome do usuário e ver todo o histórico de cobranças relacionadas àquele cliente.
+
+| Requisito                  | Descrição                                                                                                                                                    | Ator          |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- |
+| RF05.01 - Inserir Pagamento | O administrador vai pesquisar o nome do cliente e ver todas as cobranças relacionadas a ele e pagar a referente. | Administrador.      |
+| RF05.02 - Editar Pagamento  | O administraor busca o nome do cliente e vê o pagamento, seleciona o campo e envia a alteração para o sistema.              | Administrador |
+| RF05.03 - Excluir Pagamento | Caso o consórcio já tenha sido iniciado, a exclusão não será possível.                                                  | Administrador |
+
 # **Requisitos Não-Funcionais**
 
 | Código | Nome             | Descrição                                                                                                                                                        |
@@ -273,3 +292,5 @@ Preencher na tabela os riscos identificados para o início do projeto. Essa tabe
 | 10/03/2022 | Divisão de tarefas mal sucedida                                       | Baixa      | Líder Técnico | Vigente | Acompanhar de perto o desenvolvimento de cada membro da equipe.                          |
 | 09/12/2024 | Atraso nas Entregas                                                    | Alto       | Equipe          | Vigente | Atraso no avanço do projeto, e na entrega das atividades que envolvam o projeto.        |
 | 09/12/2024 | Desentendimento e mal relacionamento do grupo                          | Baixa      | Equipe          | Vigente | Problema relacional com o grupo, má interação e descaso no trabalho em equipe.        |
+
+
