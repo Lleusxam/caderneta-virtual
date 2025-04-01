@@ -22,11 +22,11 @@ MAXSUEL GADELHA OLIVEIRA DA SILVA <br>
 - [**Equipe e Definição de Papéis**](#equipe-e-definição-de-papéis)
 - [**Matriz de Competências**](#matriz-de-competências)
 - [**Histórico de revisões**](#histórico-de-revisões)
-- [**Matriz de Competências**](#matriz-de-competências-1)
 - [**Perfis dos Usuários**](#perfis-dos-usuários)
 - [**Requisitos Funcionais**](#requisitos-funcionais)
   - [Entidade Cliente - US01 - Manter Cliente](#entidade-cliente---us01---manter-cliente)
-  - [Entidade Cliente - US02 - Manter Produto](#entidade-cliente---us02---manter-produto)
+  - [Entidade Produto - US02 - Manter Produto](#entidade-produto---us02---manter-produto)
+  - [Entidade Venda - US03 - Manter Venda](#entidade-venda---us03---manter-venda)
 - [**Requisitos Não-Funcionais**](#requisitos-não-funcionais)
 - [**Riscos**](#riscos)
 
@@ -63,17 +63,6 @@ O projeto Caderneta Virtual de Vendas (CVV) é um sistema de gerenciamento desen
 | ---------- | ------ | ----------------- | :---------------------------------------------------------------------------: |
 | 12/12/2024 | 1.0    | Documento inicial | Emanuel Alves, Juan Vitório, Marlison Soares, Matheus Diniz e Maxsuel Gadelha |
 
-# **Matriz de Competências**
-
-| Equipe                            | Competências                              |
-| :-------------------------------- | :---------------------------------------- |
-| Taciano de Morais Silva           | Engenharia de Software                    |
-| Emanuel Alves de Medeiros         | Desenvolvedor Django, SwiftUI.            |
-| Juan Vitório Dutra de Araújo      | Designer, desenvolvedor Django, Web       |
-| Marlison Soares da Silva          | Desenvolvedor Back-end, Laravel, React    |
-| Matheus Diniz Fernandes           | Design, Desenvolvedor Web                 |
-| Maxsuel Gadelha Oliveira da Silva | Desenvolvedor Django, React, React-Native |
-
 # **Perfis dos Usuários**
 
 | **Perfil**        | **Descrição**                                                                                                                                                                                                                                                                                                                      |
@@ -94,7 +83,7 @@ Cliente representa os consumidores da empresa, a qual necessita conte seu Nome,C
 | RF01.03 - Atualizar Cliente | Atualiza um Cliente informando: nome, telefone,cpf e endereço.           | Administrador,Usuário. |
 | RF01.04 - Deletar Cliente   | Deleta um Cliente informando o CPF.                                      | Administrador,Usuário  |
 
-### Entidade Cliente - US02 - Manter Produto
+### Entidade Produto - US02 - Manter Produto
 
 O sistema deve manter um cadastro dos produtos ofertados.Um produto tem os atributos Código, Nome, Categoria,Cor,Descrição do produto,Tamanho e Capacidade.
 
@@ -103,7 +92,18 @@ O sistema deve manter um cadastro dos produtos ofertados.Um produto tem os atrib
 | RF02.01 - Inserir Produto   | Insere novo Produto informando: Nome, Categoria,Cor,Descrição do produto,Tamanho e Capacidade    | Administrador. |
 | RF02.02 - Listar Produtos   | Listagem dos Produtos utilizando filtros nos atributos: Nome,Categoria,Cor,Tamanho e Capacidade. | Administrador  |
 | RF02.03 - Atualizar Produto | Atualiza um Produto informando: Nome, Categoria,Cor,Descrição do produto,Tamanho e Capacidade.   | Administrador. |
-| RF02.04 - Deletar Produto   | Deleta um Produto informando o Código.                                                           | Administrador, |
+| RF02.04 - Deletar Produto   | Deleta um Produto informando o Código.                                                           | Administrador. |
+
+### Entidade Venda - US03 - Manter Venda
+
+O sistema deverá ter um manter de vendar a qual o proprietário realizará, busca, inserir novas vendas, alterar e remover vendas de produtos realizados para clientes. A venda possui atrelada a ela um usuário, a data da venda, a quantidade de parcelas e um código indentificador.
+
+| Requisito                 | Descrição                                                                                                                                                                 | Ator                  |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| RF03.01 - Inserir Venda   | Insere uma nova venda informando: O usuário que está atrelado a venda, a quantidade de parcelas, o sistema irá definir a data e o código será gerado pelo banco de dados. | Administrador,Sistema |
+| RF03.02 - Listar Venda    | Listagem das vendas utilizando filtros nos atributos: No nome do cliente, Data da venda , Código da Venda.                                                                | Administrador         |
+| RF03.03 - Atualizar Venda | Atualiza uma venda informando: O nome do cliente, código da venda.                                                                                                        | Administrador.        |
+| RF03.04 - Deletar Venda   | Deleta uma venda informando o Código.                                                                                                                                     | Administrador,        |
 
 # **Requisitos Não-Funcionais**
 
