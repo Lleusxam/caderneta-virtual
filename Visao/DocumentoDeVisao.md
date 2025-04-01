@@ -27,6 +27,8 @@ MAXSUEL GADELHA OLIVEIRA DA SILVA `<br>`
   - [Entidade Cliente - US01 - Manter Cliente](#entidade-cliente---us01---manter-cliente)
   - [Entidade Produto - US02 - Manter Produto](#entidade-produto---us02---manter-produto)
   - [Entidade Venda - US03 - Manter Venda](#entidade-venda---us03---manter-venda)
+  - [Entidade Cobrança - US04 - Manter Cobrança](#entidade-cobrança---us04---manter-cobrança)
+  - [Entidade Consórcio - US05 - Manter Consórcio](#entidade-consórcio---us05---manter-consórcio)
 - [**Requisitos Não-Funcionais**](#requisitos-não-funcionais)
 - [**Riscos**](#riscos)
 
@@ -239,6 +241,18 @@ erDiagram
     Cobranca ||--o{ Pagamento : "recebe"
 ```
 
+
+### Entidade Cobrança - US04 - Manter Cobrança
+
+O sistema terá o papel de criar as cobranças com base nas vendas realizadas.
+
+| Requisito                  | Descrição                                                                                                                                                    | Ator          |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- |
+| RF04.01 - Inserir Cobrança | Com os resultados da venda feitos, será gerada uma cobrança contendo as informações da venda como as informações do cliente, da venda realizada e do produto | Sistema.      |
+| RF04.02 - Listar Cobrança  | Ao mostrar uma venda específica, o sistema deve mostrar a lista de cobranças geradas para aquela venda.                                                      | Administrador |
+| RF04.03 - Editar Cobrança  | Ao editar o número de parcelas, caso não tenham sido pagas cobranças, o sistema deve alterar o número de cobranças registradas para a venda                  | Administrador |
+
+### Entidade Consórcio - US05 - Manter Consórcio
 
 # **Requisitos Não-Funcionais**
 
