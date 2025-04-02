@@ -118,7 +118,26 @@ O sistema terá o papel de criar as cobranças com base nas vendas realizadas.
 | RF05.02 - Listar Cobrança  | Ao mostrar uma venda específica, o sistema deve mostrar a lista de cobranças geradas para aquela venda.                                                      | Administrador |
 | RF05.03 - Editar Cobrança  | Ao editar o número de parcelas, caso não tenham sido pagas cobranças, o sistema deve alterar o número de cobranças registradas para a venda                  | Administrador |
 
-### Entidade Consórcio - US07 - Manter Consórcio
+### Entidade Cobrança - US06 - Manter Consórcio
+
+O proprietário poderá excluir, editar, cadastrar e buscar informações relacionadas a consórcios atrelados a grupos de clientes.
+
+| Requisito                  | Descrição                                                                                                                                                    | Ator          |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- |
+| RF05.01 - Inserir Consórcio | O administrador irá adicionar pessoas ao consórcio e mensalmente elas receberão uma cobrança por uma compra no valor total do consórcio. | Administrador.      |
+| RF05.02 - Listar Consórcio  | O sistema irá mostrar uma lista do consórcios ativos no momento.                                                      | Administrador |
+| RF05.03 - Editar Consórcio  | O administraor vai buscar o consórcio e enviiar as alterações, aí o sistema irá analisar e validar.                  | Administrador |
+| RF05.04 - Excluir Consórcio | Caso o consórcio já tenha sido iniciado, a exclusão não será possível.                                               | Administrador |
+
+### Entidade Consórcio - US07 - Manter Pagamento
+
+O sistema vai registrar os pagamentos relacionados a uma cobrança. O administrador pode digitar o nome do usuário e ver todo o histórico de cobranças relacionadas àquele cliente.
+
+| Requisito                  | Descrição                                                                                                                                                    | Ator          |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- |
+| RF07.01 - Inserir Pagamento | O administrador vai pesquisar o nome do cliente e ver todas as cobranças relacionadas a ele e pagar a referente. | Administrador.      |
+| RF07.02 - Editar Pagamento  | O administraor busca o nome do cliente e vê o pagamento, seleciona o campo e envia a alteração para o sistema.              | Administrador |
+| RF07.03 - Excluir Pagamento | Caso o consórcio já tenha sido iniciado, a exclusão não será possível.                                                  | Administrador |
 
 # **Modelo Conceitual**
 
