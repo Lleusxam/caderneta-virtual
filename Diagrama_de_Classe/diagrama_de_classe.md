@@ -1,3 +1,4 @@
+
 classDiagram
 
     class Categoria {
