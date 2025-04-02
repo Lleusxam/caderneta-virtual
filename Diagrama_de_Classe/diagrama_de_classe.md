@@ -1,7 +1,6 @@
 ```mermaid
 
 classDiagram
-direction RL
     class Categoria {
 	    - id: int
 	    - nome: char
