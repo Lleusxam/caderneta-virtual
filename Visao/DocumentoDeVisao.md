@@ -271,7 +271,16 @@ O sistema vai registrar os pagamentos relacionados a uma cobrança. O administra
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- |
 | RF05.01 - Inserir Pagamento | O administrador vai pesquisar o nome do cliente e ver todas as cobranças relacionadas a ele e pagar a referente. | Administrador.      |
 | RF05.02 - Editar Pagamento  | O administraor busca o nome do cliente e vê o pagamento, seleciona o campo e envia a alteração para o sistema.              | Administrador |
-| RF05.03 - Excluir Pagamento | Caso o consórcio já tenha sido iniciado, a exclusão não será possível.                                                  | Administrador |
+| RF05.03 - Pesquisar Pagamento | O administrador pesquisa o nome do cliente e vê os pagamentos relacioandos.                                                  | Administrador |
+
+### Entidade Consórcio - US07 - Enviar notificação
+
+O sistema vai enviar uma notificação para usuários, seja de cobranças, pagamentos registrados...
+
+| Requisito                  | Descrição                                                                                                                                                    | Ator          |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- |
+| RF07.01 - Enviar notificação | O sistema irá enviar notificações referentes a conta. | Sistema.      |
+
 
 # **Requisitos Não-Funcionais**
 
