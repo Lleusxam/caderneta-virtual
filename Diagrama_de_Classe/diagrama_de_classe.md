@@ -1,4 +1,5 @@
 classDiagram
+
     class Categoria {
         - id: int
         - nome: char
