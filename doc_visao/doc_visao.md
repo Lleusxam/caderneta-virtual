@@ -22,7 +22,7 @@ MAXSUEL GADELHA OLIVEIRA DA SILVA `<br>`
 - [**Equipe e Definição de Papéis**](#equipe-e-definição-de-papéis)
 - [**Matriz de Competências**](#matriz-de-competências)
 - [**Histórico de revisões**](#histórico-de-revisões)
-- [**Perfis dos Usuários**](#perfis-dos-usuários)
+- [**Perfis dos Fs**](#perfis-dos-usuários)
 - [**Requisitos Funcionais**](#requisitos-funcionais)
   - [Entidade Cliente - US02 - Manter Cliente](#entidade-cliente---us02---manter-cliente)
   - [Entidade Produto - US03 - Manter Produto](#entidade-produto---us03---manter-produto)
@@ -71,9 +71,21 @@ O projeto Caderneta Virtual de Vendas (CVV) é um sistema de gerenciamento desen
 | **Perfil**        | **Descrição**                                                                                                                                                                                                                                                                                                                          |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Administrador** | O administrador terá acesso a todas as funcionalidades envolvendo o controle de clientes, produtos, vendas, consórcios e pagamentos.                                                                                                                                                                                                         |
-| **Usuário**      | O usuário terá acesso a funções superficiais do sistema: terá o controle do andamento dos seus pagamentos, fiados pendentes, um histórico dos produtos comprados, a consulta de suas despesas e produtos, a visualização de seu histórico de compras, seu perfil de usuário, dentre outras funções comuns em sistemas de consulta. |
+| **Cliente**      | O Cliente terá acesso a funções superficiais do sistema: terá o controle do andamento dos seus pagamentos, fiados pendentes, um histórico dos produtos comprados, a consulta de suas despesas e produtos, a visualização de seu histórico de compras, seu perfil de Cliente, dentre outras funções comuns em sistemas de consulta. |
+
 
 # **Requisitos Funcionais**
+
+### Entidade Login - US01 - Manter Login
+
+Cliente representa os consumidores da empresa, a qual necessita conte seu Nome,Cpf,Telefone e Endereço.
+
+| Requisito                   | Descrição                                                               | Ator                    |
+| --------------------------- | ------------------------------------------------------------------------- | ----------------------- |
+| RF01.01 - Inserir Login   | Insere novo Login informando: nome, telefone,cpf e endereço.           | Administrador,Cliente.. |
+| RF01.02 - Atualizar Login | Atualiza um Login informando: nome, telefone,cpf e endereço.           | Administrador,Cliente. |
+| RF01.03 - Visualizar Login| Visualizar Todos os dados do seu próprio login.                        | Administrador,Cliente.| 
+| RF01.04 - Deletar Login   | Deleta um Login informando o CPF.                                       | Administrador,Cliente.  |
 
 ### Entidade Cliente - US02 - Manter Cliente
 
@@ -81,10 +93,11 @@ Cliente representa os consumidores da empresa, a qual necessita conte seu Nome,C
 
 | Requisito                   | Descrição                                                               | Ator                    |
 | --------------------------- | ------------------------------------------------------------------------- | ----------------------- |
-| RF02.01 - Inserir Cliente   | Insere novo cliente informando: nome, telefone,cpf e endereço.           | Administrador,Usuário. |
+| RF02.01 - Inserir Cliente   | Insere novo cliente informando: nome, telefone,cpf e endereço.           | Administrador,Cliente. |
 | RF02.02 - Listar Clientes   | Listagem dos Clientes utilizando filtros nos atributos: Nome e endereço. | Administrador           |
-| RF02.03 - Atualizar Cliente | Atualiza um Cliente informando: nome, telefone,cpf e endereço.           | Administrador,Usuário. |
-| RF02.04 - Deletar Cliente   | Deleta um Cliente informando o CPF.                                       | Administrador,Usuário  |
+| RF02.03 - Atualizar Cliente | Atualiza um Cliente informando: nome, telefone,cpf e endereço.           | Administrador,Cliente. |
+| RF02.04 - Deletar Cliente   | Deleta um Cliente informando o CPF.                                       | Administrador,Cliente  |
+| RF02.05 - Visualizar Cliente   | Mostra algumas informações de um cliente específico com base no seu nome,cpf... mostrando atributos como nome,telefone,cpf... | Administrador,Cliente.          |
 
 ### Entidade Produto - US03 - Manter Produto
 
@@ -96,17 +109,20 @@ O sistema deve manter um cadastro dos produtos ofertados.Um produto tem os atrib
 | RF03.02 - Listar Produtos   | Listagem dos Produtos utilizando filtros nos atributos: Nome,Categoria,Cor,Tamanho e Capacidade. | Administrador  |
 | RF03.03 - Atualizar Produto | Atualiza um Produto informando: Nome, Categoria,Cor,Descrição do produto,Tamanho e Capacidade. | Administrador. |
 | RF03.04 - Deletar Produto   | Deleta um Produto informando o Código.                                                          | Administrador. |
+| RF03.05 - Visualizar Produto   | Mostra algumas informações de um produto específico com base no seu código ou nome... mostrando atributos como cor,capacidade... | Administrador,Cliente.          |
 
 ### Entidade Venda - US04 - Manter Venda
 
-O sistema deverá ter um manter de vendar a qual o proprietário realizará, busca, inserir novas vendas, alterar e remover vendas de produtos realizados para clientes. A venda possui atrelada a ela um usuário, a data da venda, a quantidade de parcelas e um código indentificador.
+O sistema deverá ter um manter de vendar a qual o proprietário realizará, busca, inserir novas vendas, alterar e remover vendas de produtos realizados para clientes. A venda possui atrelada a ela um Cliente, a data da venda, a quantidade de parcelas e um código indentificador.
 
 | Requisito                 | Descrição                                                                                                                                                                    | Ator                  |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------- |
-| RF04.01 - Inserir Venda   | Insere uma nova venda informando: O usuário que está atrelado a venda, a quantidade de parcelas, o sistema irá definir a data e o código será gerado pelo banco de dados. | Administrador,Sistema |
+| RF04.01 - Inserir Venda   | Insere uma nova venda informando: O Cliente que está atrelado a venda, a quantidade de parcelas, o sistema irá definir a data e o código será gerado pelo banco de dados. | Administrador,Sistema |
 | RF04.02 - Listar Venda    | Listagem das vendas utilizando filtros nos atributos: No nome do cliente, Data da venda , Código da Venda.                                                                    | Administrador         |
 | RF04.03 - Atualizar Venda | Atualiza uma venda informando: O nome do cliente, código da venda.                                                                                                            | Administrador.        |
 | RF04.04 - Deletar Venda   | Deleta uma venda informando o Código.                                                                                                                                         | Administrador,        |
+| RF04.05 - Visualizar Venda   | Mostra algumas informações de um venda específica com base no seu nome,cpf... mostrando atributos como nome,data venda,produto vendido... | Administrador,Cliente.          |
+
 
 ### Entidade Cobrança - US05 - Manter Cobrança
 
@@ -128,10 +144,11 @@ O proprietário poderá excluir, editar, cadastrar e buscar informações relaci
 | RF05.02 - Listar Consórcio  | O sistema irá mostrar uma lista do consórcios ativos no momento.                                                                            | Administrador  |
 | RF05.03 - Editar Consórcio  | O administraor vai buscar o consórcio e enviiar as alterações, aí o sistema irá analisar e validar.                                      | Administrador  |
 | RF05.04 - Excluir Consórcio | Caso o consórcio já tenha sido iniciado, a exclusão não será possível.                                                                  | Administrador  |
+| RF04.05 - Visualizar Consórcio   | Mostra algumas informações do consórcio específica com base no seu nome,cpf... mostrando atributos como pessoas atreladas ao consórcio, produto do consórcio... | Administrador,Cliente.          |
 
 ### Entidade Consórcio - US07 - Manter Pagamento
 
-O sistema vai registrar os pagamentos relacionados a uma cobrança. O administrador pode digitar o nome do usuário e ver todo o histórico de cobranças relacionadas àquele cliente.
+O sistema vai registrar os pagamentos relacionados a uma cobrança. O administrador pode digitar o nome do Cliente e ver todo o histórico de cobranças relacionadas àquele cliente.
 
 | Requisito                   | Descrição                                                                                                       | Ator           |
 | --------------------------- | ----------------------------------------------------------------------------------------------------------------- | -------------- |
