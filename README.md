@@ -1,6 +1,6 @@
 ## Documentos Do Projeto
 
-- [Plano De Interação](./Plano_de_Interacao/plano_de_interacao.md)
-- [Documento De Visão](./Visao/DocumentoDeVisao.md)
-- [Documento De Modelos](./Documentos_De_Modelo/modelos.md)
-- [Documento De User Stories](./User_Stories/user_stories.md)
+- [Plano De Interação](./doc_iteracao/doc_iteracao.md)
+- [Documento De Visão](./doc_visao/doc_visao.md)
+- [Documento De Modelos](./doc_modelos/doc_modelos.md)
+- [Documento De User Stories](./doc_userstories/doc_userstories.md)
