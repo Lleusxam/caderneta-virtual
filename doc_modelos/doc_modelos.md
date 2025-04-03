@@ -36,9 +36,10 @@ classDiagram
 	    +set_nome(novoNome:char) void
     }
 
-    class UnidadeDeMedida {
+    class Capacidade {
 	    -id: int
-	    -nome: char
+		-quantidade: int
+	    -unidade_de_medida: char
 	    +cadastrar_capacidade(nome: char) ;
 	    +excluir_capacidade(id:int) void
 	    +editar_capacidade(id:int) void
@@ -49,13 +50,13 @@ classDiagram
 	    +set_nome(novoNome:char) void
     }
 
+
     class Produto {
 	    -codigo: int
 	    -nome: char
 	    -categoria: Categoria
 	    -cor: Cor
-	    -unidade_de_medida: unidade_de_medida
-	    -capacidade: int
+	    -capacidade: Capacidade
 	    +cadastrar_produto(nome: char, codigo: int, categoria: Categoria, cor: Cor, capacidade: Capacidade) void
 	    +excluir_produto(codigo: int, nome: char) void
 	    +editar_produto(codigo: int, nome: char) void
@@ -77,10 +78,9 @@ classDiagram
 	    - id: int
 	    - venda: Venda
 	    - produto: Produto
-	    - valor: double
+		+ valor_total() int
 	    + get_venda() Venda
 	    + get_produto() Produto
-	    + get_valor() int
 	    + calcular_total_venda(valor: double) double
 	    + set_venda(novaVenda: Venda) void
 	    + set_produto(novoProduto: Produto) void
@@ -259,6 +259,7 @@ classDiagram
     Venda "1" -- "1..*" Cobranca
     Cobranca "1" -- "0..*" Pagamento
 ```
+
 
 
 ### Descrição das Entidades
