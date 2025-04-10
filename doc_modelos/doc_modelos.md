@@ -8,8 +8,8 @@ Neste documento temos o modelo Conceitual (UML) ou de Dados (Entidade-Relacionam
 ### Diagrama de Classes usando Mermaid
 
 ```mermaid
-
 classDiagram
+direction RL
     class Categoria {
 	    - id: int
 	    - nome: char
@@ -245,7 +245,7 @@ classDiagram
 
     Categoria "1" -- "1..*" Produto
     Cor "1" -- "1..*" Produto
-    UnidadeDeMedida "1" -- "1*.." Produto
+    Capacidade "1" -- "1*.." Produto
     Venda "1" -- "1..*" ProdutosDasVendas
     Produto "1" -- "1..*" ProdutosDasVendas
     Usuario "1" -- "1..*" Venda
