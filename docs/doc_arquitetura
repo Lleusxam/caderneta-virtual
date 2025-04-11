@@ -9,7 +9,8 @@ O projeto adota uma arquitetura monolítica, levando em conta seu escopo reduzid
 
 ## Visão Geral da Arquitetura
 
-TODO: Imagem com a organização geral da arquitetura do projeto
+![Arquitetura CVV Light](images/cvv-arquitetura-light.png)
+
 
 ## Requisitos Não-Funcionais
 
