@@ -24,8 +24,6 @@ Encontram-se os requisitos que influenciaram na escolha arquitetural do projeto.
 
 ## Mecanismos arquiteturais
 
-TODO: Identificar todos os mecanismos arquiteturais
-
 | Mecanismo de Análise | Mecanismo de Design  | Mecanismo de Implementação |
 | -------------------- | -------------------- | -------------------------- |
 | Persistência         | Banco de dados relacional | PostgreSQL 15.8      |
@@ -35,4 +33,12 @@ TODO: Identificar todos os mecanismos arquiteturais
 
 # Implantação
 
-TODO: Descrever as configurações de distribuição dos componentes de software na área física em que serão implantados.
+A aplicação será implantada utilizando os serviços oferecidos pelo Supabase. A arquitetura da implantação será a seguinte:
+
+- **Banco de Dados**: Supabase PostgreSQL gerenciado, versão 15.8
+- **Backend**: Django + Django REST Framework, conectado ao banco do Supabase
+- **Frontend**: React JS
+- **Armazenamento de arquivos**: Utilização do Supabase Storage para armazenar imagens, documentos e outros arquivos estáticos
+- **Autenticação**: Realizada via sistema de autenticação nativo do Supabase
+
+A escolha pelo Supabase se deu pela facilidade de integração com PostgreSQL e seus diversos mecanismos prontos, reduzindo a complexidade da infraestrutura.
