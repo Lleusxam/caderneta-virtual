@@ -1,0 +1,8 @@
+__turbopack_load_page_chunks__("/[id]", [
+  "static/chunks/node_modules_next_a166bb8c._.js",
+  "static/chunks/node_modules_react-dom_82bb97c6._.js",
+  "static/chunks/node_modules_2a5cf4bb._.js",
+  "static/chunks/[root-of-the-server]__d8d0999d._.js",
+  "static/chunks/src_pages_[id]_5771e187._.js",
+  "static/chunks/src_pages_[id]_cea429d8._.js"
+])
