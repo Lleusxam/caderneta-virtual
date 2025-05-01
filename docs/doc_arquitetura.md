@@ -11,6 +11,9 @@ O projeto adota uma arquitetura monolítica, levando em conta seu escopo reduzid
 
 ![Arquitetura CVV Light](images/cvv-arquitetura-light.png)
 
+## Arquitetura Simplificada
+![Arquitetura CVV Simplificada](images/cvv-arquitetura-simplificada.png)
+
 
 ## Requisitos Não-Funcionais
 
