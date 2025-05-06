@@ -33,7 +33,7 @@ Este documento contém as User Stories relacionadas à funcionalidade de registr
 
 # Lista de User Stories
 
-## User Story US01 \- Manter Login
+## User Story US01 \- [Manter Login](doc_visao.md#entidade-login---us01---manter-login)
 
 | Manter Login                 |                                                                                                                                                                                                                                              |                         |     |
 | ---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------- | :-- |
@@ -56,7 +56,7 @@ Este documento contém as User Stories relacionadas à funcionalidade de registr
 | TA03.02                      | Se o administrador editar e-mail, nome de usuário ou telefone do cliente, essa informação deverá ser atualizada para o login.                                                                                                                |                         |     |
 | TA04.01                      | Se o administrador remover o cliente, o login também deve ser desativado.                                                                                                                                                                    |                         |     |
 
-## User Story US02 \- Manter Cliente
+## User Story US02 \- [Manter Cliente](#entidade-cliente---us02---manter-cliente)
 
 | Manter Cliente               |                                                                                                                                                                                                                                                                              |                         |     |
 | ---------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------- | :-- |
@@ -83,7 +83,7 @@ Este documento contém as User Stories relacionadas à funcionalidade de registr
 | TA05.01                      | O administrador seleciona na tela de opção deletar o cliente “XXXX”, ao apertar em **Deletar** ele é notificado com a mensagem: _Cliente deletado com sucesso._                                                                                                              |                         |     |
 | TA05.02                      | Caso o administrador queira excluir o cliente “XXXX”, e ele ainda possuir cobranças em aberto no sistema, ao apertar em **Deletar,** será exibida a mensagem: _Este cliente possui pendências a serem resolvidas, pagamentos não finalizados._                               |                         |     |
 
-## User Story US03 \- Manter Produto
+## User Story US03 \- [Manter Produto](#entidade-produto---us03---manter-produto)
 
 | Manter Produto               |                                                                                                                                                                                                                                                                   |                         |     |
 | ---------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------- | :-- |
@@ -109,7 +109,7 @@ Este documento contém as User Stories relacionadas à funcionalidade de registr
 | TA05.02                      | O administrador seleciona na tela a opção de, pesquisar pelo produto “XXXX”, e ao clicar em **Buscar** é exibida as informações referente ao produto, acompanhado da mensagem:_Produto encontrado no sistema._                                                    |                         |     |
 | TA05.03                      | O administrador seleciona na tela a opção de pesquisar pelo produto “XXXX”, mas se esse produto não está cadastrado, ao clicar em **Buscar** é exibida a mensagem : _Produto não encontrado no sistema._                                                          |                         |     |
 
-## User Story US04 \- Manter Venda
+## User Story US04 \- [Manter Venda](#entidade-venda---us04---manter-venda)
 
 | Manter Venda                 |                                                                                                                                                                                                                                                                                                                                                                                      |                         |     |
 | ---------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------- | :-- |
@@ -137,7 +137,7 @@ Este documento contém as User Stories relacionadas à funcionalidade de registr
 | TA04.02                      | O administrador vai buscar por alguma venda de um cliente, mas ele preenche algum campo de forma errada ou em branco, ao clicar em **Pesquisar** é exibido uma Mensagem: _Não foi possível exibir a venda do cliente, ele não foi cadastrado no sistema ou tem alguma informação errada._                                                                                            |                         |     |
 | TA04.03                      | O administrador seleciona na tela a opção de pesquisar venda, e busca por um cliente “XXXX”, e ao clicar em **Pesquisar** é exibida as informações referente a venda desse cliente, acompanhado da mensagem:_Venda encontrada no sistema._                                                                                                                                           |                         |     |
 
-## User Story US05 \- Manter Consórcio
+## User Story US05 \- [Manter Consórcio](#entidade-cobrança---us06---manter-consórcio)
 
 | Manter Consórcio             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                         |     |
 | ---------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------- | :-- |
@@ -164,7 +164,7 @@ Este documento contém as User Stories relacionadas à funcionalidade de registr
 | TA04.01                      | O proprietário(a) deseja pesquisar um consórcio. Ele(a) irá pesquisar o nome ou ID do consórcio e o sistema mostrará as informações.                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                         |     |
 | TA04.02                      | Caso o consórcio não seja encontrado, o sistema irá mostrar que o consórcio não existe no sistema.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |                         |     |
 
-## User Story US06 \- Manter Pagamento
+## User Story US06 \- [Manter Pagamento](#entidade-consórcio---us07---manter-pagamento)
 
 | Manter Pagamento             |                                                                                                                                                                                                                                                                                                                                   |                         |     |
 | ---------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------- | :-- |
@@ -188,7 +188,7 @@ Este documento contém as User Stories relacionadas à funcionalidade de registr
 | TA03.01                      | O administrador deseja pesquisar uma cobrança/pagamento. Ele(a) irá pesquisar o nome referente ao cliente da cobrança ou id, o sistema irá verificar se existe pagamento relacionado e irá retornar as informações listadas.                                                                                                      |                         |     |
 | TA03.02                      | Caso o sistema não encontre uma cobrança/pagamento relacionado, a pesquisa irá encerrar por ali.                                                                                                                                                                                                                                  |                         |     |
 
-## User Story US07 \- Manter Cobrança
+## User Story US07 \- [Manter Cobrança](#entidade-cobrança---us05---manter-cobrança)
 
 | Manter Cobrança              |                                                                                                                                              |                         |     |
 | ---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------- | :-- |
@@ -208,7 +208,7 @@ Este documento contém as User Stories relacionadas à funcionalidade de registr
 | TA02.01                      | Ao mostrar uma venda específica, o sistema deve mostrar a lista de cobranças geradas para aquela venda.                                      |                         |     |
 | TA03.01                      | Ao editar o número de parcelas, caso não tenham sido pagas cobranças, o sistema deve alterar o número de cobranças registradas para a venda. |                         |     |
 
-## User Story US08 \- Enviar notificação
+## User Story US08 \- [Enviar notificação](#entidade-notificação---us08---enviar-notificação)
 
 | Enviar notificação           |                                                                                                                                                                                       |                         |     |
 | ---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :---------------------- | :-- |
@@ -231,7 +231,7 @@ Este documento contém as User Stories relacionadas à funcionalidade de registr
 | TA03.01                      | O administrador cadastra uma nova cobrança ao cliente. Se feito com sucesso, uma notificação relatando essa cobrança deve ser enviada ao endereço de e-mail do cliente.               |                         |     |
 | TA03.02                      | O administrador cadastra um pagamento realizado pelo cliente. Se feito com sucesso, uma notificação relatando esse pagamento deve ser enviada ao endereço de e-mail do cliente.       |                         |     |
 
-## User Story US09 \- Gerar Relatório
+## User Story US09 \- [Gerar Relatório](#entidade-relatório---us09---gerar-relatórios)
 
 | Gerar Relatório              |                                                                                                                                                                                                                                                                                                                                                                                                                                                      |                         |     |
 | ---------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------- | :-- |
