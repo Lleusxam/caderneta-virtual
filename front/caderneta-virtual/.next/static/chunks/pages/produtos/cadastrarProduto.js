@@ -1,8 +1,0 @@
-__turbopack_load_page_chunks__("/produtos/cadastrarProduto", [
-  "static/chunks/node_modules_next_bda2ad00._.js",
-  "static/chunks/node_modules_react-dom_82bb97c6._.js",
-  "static/chunks/node_modules_2a5cf4bb._.js",
-  "static/chunks/[root-of-the-server]__a7b584c5._.js",
-  "static/chunks/src_pages_index_5771e187._.js",
-  "static/chunks/src_pages_index_44038afc._.js"
-])

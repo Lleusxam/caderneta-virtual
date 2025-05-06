@@ -1,8 +1,0 @@
-__turbopack_load_page_chunks__("/produtos/[id]/editar", [
-  "static/chunks/node_modules_next_a166bb8c._.js",
-  "static/chunks/node_modules_react-dom_82bb97c6._.js",
-  "static/chunks/node_modules_2a5cf4bb._.js",
-  "static/chunks/[root-of-the-server]__4bc1ee41._.js",
-  "static/chunks/src_pages_produtos_[id]_editar_tsx_5771e187._.js",
-  "static/chunks/src_pages_produtos_[id]_editar_tsx_c97c2962._.js"
-])
