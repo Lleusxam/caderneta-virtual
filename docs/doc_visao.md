@@ -24,11 +24,15 @@ MAXSUEL GADELHA OLIVEIRA DA SILVA `<br>`
 - [**Histórico de revisões**](#histórico-de-revisões)
 - [**Perfis dos Usuários**](#perfis-dos-usuários)
 - [**Requisitos Funcionais**](#requisitos-funcionais)
+  - [Entidade Login - US01 - Manter Login](#entidade-login---us01---manter-login)
   - [Entidade Cliente - US02 - Manter Cliente](#entidade-cliente---us02---manter-cliente)
   - [Entidade Produto - US03 - Manter Produto](#entidade-produto---us03---manter-produto)
   - [Entidade Venda - US04 - Manter Venda](#entidade-venda---us04---manter-venda)
   - [Entidade Cobrança - US05 - Manter Cobrança](#entidade-cobrança---us05---manter-cobrança)
-  - [Entidade Consórcio - US07 - Manter Consórcio](#entidade-consórcio---us07---manter-consórcio)
+  - [Entidade Cobrança - US06 - Manter Consórcio](#entidade-cobrança---us06---manter-consórcio)
+  - [Entidade Consórcio - US07 - Manter Pagamento](#entidade-consórcio---us07---manter-pagamento)
+  - [Entidade Notificação - US08 - Enviar Notificação](#entidade-notificação---us08---enviar-notificação)
+  - [Entidade Relatório - US09 - Gerar Relatórios](#entidade-relatório---us09---gerar-relatórios)
 - [**Modelo Conceitual**](#modelo-conceitual)
 - [**Requisitos Não-Funcionais**](#requisitos-não-funcionais)
 - [**Riscos**](#riscos)
@@ -64,49 +68,63 @@ O projeto Caderneta Virtual de Vendas (CVV) é um sistema de gerenciamento desen
 
 | Data       | Versão | Descrição         |                                     Autor                                     |
 | ---------- | ------ | ----------------- | :---------------------------------------------------------------------------: |
-| 12/12/2024 | 1.0    | Documento inicial | Emanuel Alves, Juan Vitório, Marlison Soares, Matheus Diniz e Maxsuel Gadelha |
+| 01/04/2025 | 1.0    | Documento inicial | Emanuel Alves, Juan Vitório, Marlison Soares, Matheus Diniz e Maxsuel Gadelha |
 
 # **Perfis dos Usuários**
 
 | **Perfil**        | **Descrição**                                                                                                                                                                                                                                                                                                                      |
 | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Administrador** | O administrador terá acesso a todas as funcionalidades envolvendo o controle de clientes, produtos, vendas, consórcios e pagamentos.                                                                                                                                                                                               |
-| **Usuário**       | O usuário terá acesso a funções superficiais do sistema: terá o controle do andamento dos seus pagamentos, fiados pendentes, um histórico dos produtos comprados, a consulta de suas despesas e produtos, a visualização de seu histórico de compras, seu perfil de usuário, dentre outras funções comuns em sistemas de consulta. |
+| **Cliente**       | O Cliente terá acesso a funções superficiais do sistema: terá o controle do andamento dos seus pagamentos, fiados pendentes, um histórico dos produtos comprados, a consulta de suas despesas e produtos, a visualização de seu histórico de compras, seu perfil de Cliente, dentre outras funções comuns em sistemas de consulta. |
 
 # **Requisitos Funcionais**
+
+### Entidade Login - US01 - Manter Login
+
+Cliente representa os consumidores da empresa, a qual necessita conte seu Nome,Cpf,Telefone e Endereço.
+
+| Requisito                  | Descrição                                                    | Ator                    |
+| -------------------------- | ------------------------------------------------------------ | ----------------------- |
+| RF01.01 - Inserir Login    | Insere novo Login informando: nome, telefone,cpf e endereço. | Administrador,Cliente.. |
+| RF01.02 - Atualizar Login  | Atualiza um Login informando: nome, telefone,cpf e endereço. | Administrador,Cliente.  |
+| RF01.03 - Visualizar Login | Visualizar Todos os dados do seu próprio login.              | Administrador,Cliente.  |
+| RF01.04 - Deletar Login    | Deleta um Login informando o CPF.                            | Administrador,Cliente.  |
 
 ### Entidade Cliente - US02 - Manter Cliente
 
 Cliente representa os consumidores da empresa, a qual necessita conte seu Nome,Cpf,Telefone e Endereço.
 
-| Requisito                   | Descrição                                                                | Ator                   |
-| --------------------------- | ------------------------------------------------------------------------ | ---------------------- |
-| RF02.01 - Inserir Cliente   | Insere novo cliente informando: nome, telefone,cpf e endereço.           | Administrador,Usuário. |
-| RF02.02 - Listar Clientes   | Listagem dos Clientes utilizando filtros nos atributos: Nome e endereço. | Administrador          |
-| RF02.03 - Atualizar Cliente | Atualiza um Cliente informando: nome, telefone,cpf e endereço.           | Administrador,Usuário. |
-| RF02.04 - Deletar Cliente   | Deleta um Cliente informando o CPF.                                      | Administrador,Usuário  |
+| Requisito                    | Descrição                                                                                                                     | Ator                   |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| RF02.01 - Inserir Cliente    | Insere novo cliente informando: nome, telefone,cpf e endereço.                                                                | Administrador,Cliente. |
+| RF02.02 - Listar Clientes    | Listagem dos Clientes utilizando filtros nos atributos: Nome e endereço.                                                      | Administrador          |
+| RF02.03 - Atualizar Cliente  | Atualiza um Cliente informando: nome, telefone,cpf e endereço.                                                                | Administrador,Cliente. |
+| RF02.04 - Deletar Cliente    | Deleta um Cliente informando o CPF.                                                                                           | Administrador,Cliente  |
+| RF02.05 - Visualizar Cliente | Mostra algumas informações de um cliente específico com base no seu nome,cpf... mostrando atributos como nome,telefone,cpf... | Administrador,Cliente. |
 
 ### Entidade Produto - US03 - Manter Produto
 
 O sistema deve manter um cadastro dos produtos ofertados.Um produto tem os atributos Código, Nome, Categoria,Cor,Descrição do produto,Tamanho e Capacidade.
 
-| Requisito                   | Descrição                                                                                        | Ator           |
-| --------------------------- | ------------------------------------------------------------------------------------------------ | -------------- |
-| RF03.01 - Inserir Produto   | Insere novo Produto informando: Nome, Categoria,Cor,Descrição do produto,Tamanho e Capacidade    | Administrador. |
-| RF03.02 - Listar Produtos   | Listagem dos Produtos utilizando filtros nos atributos: Nome,Categoria,Cor,Tamanho e Capacidade. | Administrador  |
-| RF03.03 - Atualizar Produto | Atualiza um Produto informando: Nome, Categoria,Cor,Descrição do produto,Tamanho e Capacidade.   | Administrador. |
-| RF03.04 - Deletar Produto   | Deleta um Produto informando o Código.                                                           | Administrador. |
+| Requisito                    | Descrição                                                                                                                        | Ator                   |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| RF03.01 - Inserir Produto    | Insere novo Produto informando: Nome, Categoria,Cor,Descrição do produto,Tamanho e Capacidade                                    | Administrador.         |
+| RF03.02 - Listar Produtos    | Listagem dos Produtos utilizando filtros nos atributos: Nome,Categoria,Cor,Tamanho e Capacidade.                                 | Administrador          |
+| RF03.03 - Atualizar Produto  | Atualiza um Produto informando: Nome, Categoria,Cor,Descrição do produto,Tamanho e Capacidade.                                   | Administrador.         |
+| RF03.04 - Deletar Produto    | Deleta um Produto informando o Código.                                                                                           | Administrador.         |
+| RF03.05 - Visualizar Produto | Mostra algumas informações de um produto específico com base no seu código ou nome... mostrando atributos como cor,capacidade... | Administrador,Cliente. |
 
 ### Entidade Venda - US04 - Manter Venda
 
-O sistema deverá ter um manter de vendar a qual o proprietário realizará, busca, inserir novas vendas, alterar e remover vendas de produtos realizados para clientes. A venda possui atrelada a ela um usuário, a data da venda, a quantidade de parcelas e um código indentificador.
+O sistema deverá ter um manter de vendar a qual o proprietário realizará, busca, inserir novas vendas, alterar e remover vendas de produtos realizados para clientes. A venda possui atrelada a ela um Cliente, a data da venda, a quantidade de parcelas e um código indentificador.
 
-| Requisito                 | Descrição                                                                                                                                                                 | Ator                  |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
-| RF04.01 - Inserir Venda   | Insere uma nova venda informando: O usuário que está atrelado a venda, a quantidade de parcelas, o sistema irá definir a data e o código será gerado pelo banco de dados. | Administrador,Sistema |
-| RF04.02 - Listar Venda    | Listagem das vendas utilizando filtros nos atributos: No nome do cliente, Data da venda , Código da Venda.                                                                | Administrador         |
-| RF04.03 - Atualizar Venda | Atualiza uma venda informando: O nome do cliente, código da venda.                                                                                                        | Administrador.        |
-| RF04.04 - Deletar Venda   | Deleta uma venda informando o Código.                                                                                                                                     | Administrador,        |
+| Requisito                  | Descrição                                                                                                                                                                 | Ator                   |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| RF04.01 - Inserir Venda    | Insere uma nova venda informando: O Cliente que está atrelado a venda, a quantidade de parcelas, o sistema irá definir a data e o código será gerado pelo banco de dados. | Administrador,Sistema  |
+| RF04.02 - Listar Venda     | Listagem das vendas utilizando filtros nos atributos: No nome do cliente, Data da venda , Código da Venda.                                                                | Administrador          |
+| RF04.03 - Atualizar Venda  | Atualiza uma venda informando: O nome do cliente, código da venda.                                                                                                        | Administrador.         |
+| RF04.04 - Deletar Venda    | Deleta uma venda informando o Código.                                                                                                                                     | Administrador,         |
+| RF04.05 - Visualizar Venda | Mostra algumas informações de um venda específica com base no seu nome,cpf... mostrando atributos como nome,data venda,produto vendido...                                 | Administrador,Cliente. |
 
 ### Entidade Cobrança - US05 - Manter Cobrança
 
@@ -118,7 +136,49 @@ O sistema terá o papel de criar as cobranças com base nas vendas realizadas.
 | RF05.02 - Listar Cobrança  | Ao mostrar uma venda específica, o sistema deve mostrar a lista de cobranças geradas para aquela venda.                                                      | Administrador |
 | RF05.03 - Editar Cobrança  | Ao editar o número de parcelas, caso não tenham sido pagas cobranças, o sistema deve alterar o número de cobranças registradas para a venda                  | Administrador |
 
-### Entidade Consórcio - US07 - Manter Consórcio
+### Entidade Cobrança - US06 - Manter Consórcio
+
+O proprietário poderá excluir, editar, cadastrar e buscar informações relacionadas a consórcios atrelados a grupos de clientes.
+
+| Requisito                      | Descrição                                                                                                                                                       | Ator                   |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| RF05.01 - Inserir Consórcio    | O administrador irá adicionar pessoas ao consórcio e mensalmente elas receberão uma cobrança por uma compra no valor total do consórcio.                        | Administrador.         |
+| RF05.02 - Listar Consórcio     | O sistema irá mostrar uma lista do consórcios ativos no momento.                                                                                                | Administrador          |
+| RF05.03 - Editar Consórcio     | O administraor vai buscar o consórcio e enviiar as alterações, aí o sistema irá analisar e validar.                                                             | Administrador          |
+| RF05.04 - Excluir Consórcio    | Caso o consórcio já tenha sido iniciado, a exclusão não será possível.                                                                                          | Administrador          |
+| RF04.05 - Visualizar Consórcio | Mostra algumas informações do consórcio específica com base no seu nome,cpf... mostrando atributos como pessoas atreladas ao consórcio, produto do consórcio... | Administrador,Cliente. |
+
+### Entidade Consórcio - US07 - Manter Pagamento
+
+O sistema vai registrar os pagamentos relacionados a uma cobrança. O administrador pode digitar o nome do Cliente e ver todo o histórico de cobranças relacionadas àquele cliente.
+
+| Requisito                   | Descrição                                                                                                        | Ator           |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------- | -------------- |
+| RF07.01 - Inserir Pagamento | O administrador vai pesquisar o nome do cliente e ver todas as cobranças relacionadas a ele e pagar a referente. | Administrador. |
+| RF07.02 - Editar Pagamento  | O administraor busca o nome do cliente e vê o pagamento, seleciona o campo e envia a alteração para o sistema.   | Administrador  |
+| RF07.03 - Excluir Pagamento | Caso o consórcio já tenha sido iniciado, a exclusão não será possível.                                           | Administrador  |
+
+### Entidade Notificação - US08 - Enviar Notificação
+
+O sistema irá emitir uma notificação destinada aos usuários. Essa notificação poderá ser sobre novas cobranças, pagamentos registrados, novos produtos cadastrados e alterações de dados do usuário.
+
+| Requisito                                | Descrição                                                                                                                                                   | Ator    |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| RF08.01 - Notificação sobre Produto      | O adminitrador cadastra um novo produto e é enviada um notificação avisando sobre o cadastro                                                                | Sistema |
+| RF08.02 - Notificação sobre Novo Cliente | O administrador cadastra um novo cliente e, se a operação for bem-sucedida, o sistema envia uma notificação por e-mail ao cliente sobre a criação da conta. | Sistema |
+| RF08.03 - Notificação sobre Pagamento    | O administrador registra um pagamento realizado por um cliente e, se a operação for bem-sucedida, o sistema envia uma notificação por e-mail ao cliente.    | Sistema |
+| RF08.04 - Notificação sobre Cobrança     | O administrador cadastra uma nova cobrança para um cliente e, se a operação for bem-sucedida, o sistema envia uma notificação por e-mail ao cliente.        | Sistema |
+
+### Entidade Relatório - US09 - Gerar Relatórios
+
+O sistema vai registrar os pagamentos relacionados a uma cobrança. O administrador pode digitar o nome do Cliente e ver todo o histórico de cobranças relacionadas àquele cliente.
+
+| Requisito | Descrição                                                                                                                                                                                                                                   | Ator          |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| RF09.01   | O administrador escolhe um tipo de dado (clientes, produtos, vendas…), aplica um filtro e clica em pesquisar. Se houver dados, o sistema exibe uma tabela filtrada e a mensagem: "Relação das informações escolhidas."                      | Administrador |
+| RF09.02   | O administrador escolhe um tipo de dado (clientes, produtos, vendas…), aplica um filtro e clica em pesquisar. Se não houver dados, o sistema exibe a mensagem: "Não há nenhuma informação que se enquadre com o filtro proposto."           | Administrador |
+| RF09.03   | O cliente escolhe um tipo de informação (produtos comprados, consórcios abertos…), aplica um filtro e clica em pesquisar. Se houver dados, o sistema exibe uma tabela filtrada e a mensagem: "Relação das informações selecionadas."        | Cliente       |
+| RF09.04   | O cliente escolhe um tipo de informação (produtos comprados, consórcios abertos…), aplica um filtro e clica em pesquisar. Se não houver dados, o sistema exibe a mensagem: "Nenhuma informação foi encontrada com base no filtro aplicado." | Cliente       |
 
 # **Modelo Conceitual**
 
