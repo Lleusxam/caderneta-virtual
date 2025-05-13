@@ -312,6 +312,44 @@ erDiagram
     Venda ||--o{ Cobranca : "gera"
     Cobranca ||--o{ Pagamento : "recebe"
 ```
+### Entidade Cobrança - US04 - Manter Cobrança
+
+O sistema terá o papel de criar as cobranças com base nas vendas realizadas.
+
+| Requisito                  | Descrição                                                                                                                                                    | Ator          |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- |
+| RF04.01 - Inserir Cobrança | Com os resultados da venda feitos, será gerada uma cobrança contendo as informações da venda como as informações do cliente, da venda realizada e do produto | Sistema.      |
+| RF04.02 - Listar Cobrança  | Ao mostrar uma venda específica, o sistema deve mostrar a lista de cobranças geradas para aquela venda.                                                      | Administrador |
+| RF04.03 - Editar Cobrança  | Ao editar o número de parcelas, caso não tenham sido pagas cobranças, o sistema deve alterar o número de cobranças registradas para a venda                  | Administrador |
+
+### Entidade Consórcio - US05 - Manter Consórcio
+
+O proprietário poderá excluir, editar, cadastrar e buscar informações relacionadas a consórcios atrelados a grupos de clientes.
+
+| Requisito                  | Descrição                                                                                                                                                    | Ator          |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- |
+| RF05.01 - Inserir Consórcio | O administrador irá adicionar pessoas ao consórcio e mensalmente elas receberão uma cobrança por uma compra no valor total do consórcio. | Administrador.      |
+| RF05.02 - Listar Consórcio  | O sistema irá mostrar uma lista do consórcios ativos no momento.                                                      | Administrador |
+| RF05.03 - Editar Consórcio  | O administraor vai buscar o consórcio e enviiar as alterações, aí o sistema irá analisar e validar.                  | Administrador |
+| RF05.04 - Excluir Consórcio | Caso o consórcio já tenha sido iniciado, a exclusão não será possível.                                               | Administrador |
+
+### Entidade Consórcio - US06 - Manter Pagamento
+
+O sistema vai registrar os pagamentos relacionados a uma cobrança. O administrador pode digitar o nome do usuário e ver todo o histórico de cobranças relacionadas àquele cliente.
+
+| Requisito                  | Descrição                                                                                                                                                    | Ator          |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- |
+| RF05.01 - Inserir Pagamento | O administrador vai pesquisar o nome do cliente e ver todas as cobranças relacionadas a ele e pagar a referente. | Administrador.      |
+| RF05.02 - Editar Pagamento  | O administraor busca o nome do cliente e vê o pagamento, seleciona o campo e envia a alteração para o sistema.              | Administrador |
+| RF05.03 - Pesquisar Pagamento | O administrador pesquisa o nome do cliente e vê os pagamentos relacioandos.                                                  | Administrador |
+
+### Entidade Consórcio - US07 - Enviar notificação
+
+O sistema vai enviar uma notificação para usuários, seja de cobranças, pagamentos registrados...
+
+| Requisito                  | Descrição                                                                                                                                                    | Ator          |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- |
+| RF07.01 - Enviar notificação | O sistema irá enviar notificações referentes a conta. | Sistema.      |
 
 # **Requisitos Não-Funcionais**
 
@@ -324,6 +362,16 @@ erDiagram
 # **Riscos**
 
 Preencher na tabela os riscos identificados para o início do projeto. Essa tabela deve ser atualizada ao final de cada iteração na reunião de acompanhamento.
+
+| Data       | Risco                                                                  | Prioridade | Responsável    | Status  | Providência/Solução                                                                   |
+| :--------- | :--------------------------------------------------------------------- | :--------- | :-------------- | :------ | :--------------------------------------------------------------------------------------- |
+| 10/03/2022 | Não aprendizado das ferramentas utilizadas pelos componentes do grupo | Alta       | Equipe          | Vigente | Reforçar estudos sobre as ferramentas e aulas com a integrante que conhece a ferramenta |
+| 10/03/2022 | Ausência do cliente por qualquer motivo                               | Média     | Líder Técnico | Vigente | Planejar o cronograma tendo em base a agenda do cliente                                  |
+| 10/03/2022 | Divisão de tarefas mal sucedida                                       | Baixa      | Líder Técnico | Vigente | Acompanhar de perto o desenvolvimento de cada membro da equipe.                          |
+| 09/12/2024 | Atraso nas Entregas                                                    | Alto       | Equipe          | Vigente | Atraso no avanço do projeto, e na entrega das atividades que envolvam o projeto.        |
+| 09/12/2024 | Desentendimento e mal relacionamento do grupo                          | Baixa      | Equipe          | Vigente | Problema relacional com o grupo, má interação e descaso no trabalho em equipe.        |
+
+
 
 | Data       | Risco                                                                 | Prioridade | Responsável   | Status  | Providência/Solução                                                                     |
 | :--------- | :-------------------------------------------------------------------- | :--------- | :------------ | :------ | :-------------------------------------------------------------------------------------- |
