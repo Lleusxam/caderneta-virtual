@@ -1,3 +1,48 @@
+## Função: valor_total_devido_por_cliente(cliente_id INT)
+
+Retorna o valor total das compras parceladas ainda em aberto de um determinado cliente.
+- Parâmetros: cliente_id (ID do cliente a ser consultado)
+- Retorno: valor total das dívidas em aberto do cliente
+- Utilização: usada para consulta individual do valor total que um cliente está devendo
+
+```sql
+CREATE OR REPLACE FUNCTION valor_total_devido_por_cliente(cliente_id INT)
+RETURNS NUMERIC AS $$
+DECLARE
+    total NUMERIC;
+BEGIN
+    SELECT SUM(v.valor_total)
+    INTO total
+    FROM venda v
+    WHERE v.cliente_id = cliente_id AND v.quantidade_de_parcelas > 1;
+    
+    RETURN COALESCE(total, 0);
+END;
+$$ LANGUAGE plpgsql;
+```
+
+- Função: quantidade_clientes_inadimplentes()
+
+Retorna a quantidade de clientes com pelo menos uma compra parcelada (inadimplentes).
+- Parâmetros: nenhum
+- Retorno: número de clientes inadimplentes
+- Utilização: usada para gerar relatórios de inadimplência e calcular a taxa de fiado.
+
+```sql
+CREATE OR REPLACE PROCEDURE enviar_lembretes_inadimplentes()
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    INSERT INTO notificacoes(cliente_id, mensagem, data_envio)
+    SELECT DISTINCT v.cliente_id,
+           'Você possui pagamentos pendentes em sua caderneta.',
+           NOW()
+    FROM venda v
+    WHERE v.quantidade_de_parcelas > 1;
+END;
+$$;
+```
+
 ## Procedimento: editar_venda
 
 Edita os dados de uma venda já registrada no sistema.
