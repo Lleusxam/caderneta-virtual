@@ -5,6 +5,19 @@ Consulta os nomes dos clientes que possuem compras parceladas (mais de 1 parcela
 - Parâmetros: nenhum
 - Retorno: lista de nomes de clientes com dívidas
 - Utilização: usada para relatórios de inadimplência ou para enviar lembretes de pagamento.
+```sql
+CREATE OR REPLACE FUNCTION clientes_com_dividas()
+RETURNS TABLE(nome_cliente VARCHAR) AS $$
+BEGIN
+    RETURN QUERY
+    SELECT DISTINCT u.nome
+    FROM usuario u
+    JOIN venda v ON u.id = v.cliente_id
+    WHERE v.quantidade_de_parcelas > 1;
+END;
+$$ LANGUAGE plpgsql;
+
+```
 
 ---
 
@@ -16,5 +29,17 @@ Consulta os nomes dos clientes que pagaram à vista ou em apenas uma parcela, ou
 - Retorno: lista de nomes de clientes sem dívidas
 - Utilização: usada para identificar clientes confiáveis.
 
+```sql
+CREATE OR REPLACE FUNCTION clientes_em_dia()
+RETURNS TABLE(nome_cliente VARCHAR) AS $$
+BEGIN
+    RETURN QUERY
+    SELECT DISTINCT u.nome
+    FROM usuario u
+    JOIN venda v ON u.id = v.cliente_id
+    WHERE v.quantidade_de_parcelas = 1;
+END;
+$$ LANGUAGE plpgsql;
 
+```
 
