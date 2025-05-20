@@ -43,3 +43,18 @@ $$ LANGUAGE plpgsql;
 
 ```
 
+## Procedimento: registrar_venda()
+Cadastra uma nova venda para um cliente já existente.
+
+- Parâmetros: ID do cliente, data da venda, número de parcelas.
+- Retorno: Nenhum
+- Utilização: Registrar uma venda no banco de dados
+
+---
+
+## Procedimento: registrar_produto()
+Cadastra um novo produto no sistema.
+
+- Parâmetros: Categoria, cor, unidade de medida, capacidade.
+- Retorno: Nenhum
+- Utilização: Registrar um produto no banco de dados
