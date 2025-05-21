@@ -43,3 +43,23 @@ END;
 $$ LANGUAGE plpgsql;
 
 ```
+
+## Procedimento :
+
+```sql
+CREATE OR REPLACE PROCEDURE registrar_consorcio(
+    IN p_cliente_id INTEGER,
+    IN p_data_inicio Date
+    IN p_data_fim DATE,
+)
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    INSERT INTO consorcio (cliente_id, data_inicio, data_fim)
+    VALUES (p_cliente_id, p_data_inicio, p_data_fim);
+
+    RAISE NOTICE 'Consórcio registrado com sucesso.';
+END;
+$$;
+
+```
