@@ -46,9 +46,16 @@ $$ LANGUAGE plpgsql;
 
 ## Procedimento :
 
+Cadastra um novo consórcio no sistema.
+
+- Parâmetros: nome (CHAR), data de início (DATE), data final (DATE).
+- Retorno: Nenhum
+- Utilização: Registrar um consórcio no banco de dados
+
 ```sql
 CREATE OR REPLACE PROCEDURE registrar_consorcio(
     IN p_cliente_id INTEGER,
+    IN nome_consorcio CHAR
     IN p_data_inicio Date
     IN p_data_fim DATE,
 )
@@ -62,4 +69,27 @@ BEGIN
 END;
 $$;
 
+```
+
+## Procedimento Excluir Consórcio
+
+Exclui um consórcio do sistema.
+
+Parâmetros: id (int) – identificador do consórcio a ser excluído.
+Retorno: Nenhum
+Utilização: Remove permanentemente um consórcio registrado no banco de dados.
+
+```SQL
+CREATE OR REPLACE PROCEDURE excluir_consorcio(
+    IN p_id INT
+)
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    DELETE FROM consorcio
+    WHERE id = p_id;
+
+    RAISE NOTICE 'Consórcio com ID % excluído com sucesso.', p_id;
+END;
+$$;
 ```
