@@ -272,3 +272,83 @@ direction RL
 | ALI Cobranca               | Cobranca, Venda                                |     35 PF     |
 | ALI Pagamento              | Pagamento, Cobranca                            |     35 PF     |
 | **Total**                  | **16 ALIs**                                    |  **560 PF**   |
+
+## Contagem Estimativa
+
+| Função de Dado                        | Tipo | RLR | DER | Complexidade | Tamanho em PF |
+| ------------------------------------- | ---- | --- | --- | ------------ | ------------- |
+| Categoria                             | ALI  | 1   | 2   | Baixa        | 7 PF          |
+| Cor                                   | ALI  | 1   | 2   | Baixa        | 7 PF          |
+| Capacidade                            | ALI  | 1   | 3   | Baixa        | 7 PF          |
+| Produto                               | ALI  | 4   | 5   | Baixa        | 7 PF          |
+| ProdutosDasVendas                     | ALI  | 3   | 3   | Baixa        | 7 PF          |
+| Venda                                 | ALI  | 2   | 4   | Baixa        | 7 PF          |
+| Usuario                               | ALI  | 3   | 7   | Baixa        | 7 PF          |
+| Endereco                              | ALI  | 1   | 4   | Baixa        | 7 PF          |
+| Bairro                                | ALI  | 1   | 2   | Baixa        | 7 PF          |
+| Cidade                                | ALI  | 1   | 2   | Baixa        | 7 PF          |
+| Estado                                | ALI  | 1   | 2   | Baixa        | 7 PF          |
+| TipoDeUsuario                         | ALI  | 1   | 2   | Baixa        | 7 PF          |
+| Consorcio                             | ALI  | 1   | 4   | Baixa        | 7 PF          |
+| ParticipacoesConsorcio                | ALI  | 3   | 5   | Baixa        | 7 PF          |
+| Cobranca                              | ALI  | 2   | 5   | Baixa        | 7 PF          |
+| Pagamento                             | ALI  | 2   | 6   | Baixa        | 7 PF          |
+| **Total**                             |      |     |     |              | **112 PF**    |
+| Função de Dado                        | Tipo | RLR | DER | Complexidade | Tamanho em PF |
+| RF01 - Inserir Categoria              | EE   | 1   | 2   | Baixa        | 3 PF          |
+| RF02 - Editar Categoria               | EE   | 1   | 2   | Baixa        | 3 PF          |
+| RF03 - Excluir Categoria              | EE   | 1   | 2   | Baixa        | 3 PF          |
+| RF04 - Pesquisar Categoria            | CE   | 1   | 2   | Baixa        | 3 PF          |
+| RF01 - Inserir Cor                    | EE   | 1   | 2   | Baixa        | 3 PF          |
+| RF02 - Editar Cor                     | EE   | 1   | 2   | Baixa        | 3 PF          |
+| RF03 - Excluir Cor                    | EE   | 1   | 2   | Baixa        | 3 PF          |
+| RF04 - Pesquisar Cor                  | CE   | 1   | 2   | Baixa        | 3 PF          |
+| RF01 - Inserir Capacidade             | EE   | 1   | 3   | Baixa        | 3 PF          |
+| RF02 - Editar Capacidade              | EE   | 1   | 3   | Baixa        | 3 PF          |
+| RF03 - Excluir Capacidade             | EE   | 1   | 3   | Baixa        | 3 PF          |
+| RF04 - Pesquisar Capacidade           | CE   | 1   | 3   | Baixa        | 3 PF          |
+| RF01 - Inserir Produto                | EE   | 4   | 5   | Baixa        | 3 PF          |
+| RF02 - Editar Produto                 | EE   | 4   | 5   | Baixa        | 3 PF          |
+| RF03 - Excluir Produto                | EE   | 4   | 5   | Baixa        | 3 PF          |
+| RF04 - Pesquisar Produto              | CE   | 4   | 5   | Baixa        | 3 PF          |
+| RF01 - Inserir ProdutosDasVendas      | EE   | 2   | 3   | Baixa        | 3 PF          |
+| RF01 - Inserir Venda                  | EE   | 2   | 4   | Baixa        | 3 PF          |
+| RF02 - Editar Venda                   | EE   | 2   | 4   | Baixa        | 3 PF          |
+| RF03 - Excluir Venda                  | EE   | 2   | 4   | Baixa        | 3 PF          |
+| RF04 - Pesquisar Venda                | CE   | 2   | 4   | Baixa        | 3 PF          |
+| RF01 - Inserir Usuario                | EE   | 3   | 7   | Baixa        | 3 PF          |
+| RF02 - Editar Usuario                 | EE   | 3   | 7   | Baixa        | 3 PF          |
+| RF03 - Excluir Usuario                | EE   | 3   | 7   | Baixa        | 3 PF          |
+| RF04 - Pesquisar Usuario              | CE   | 3   | 7   | Baixa        | 3 PF          |
+| RF01 - Inserir Endereco               | EE   | 1   | 4   | Baixa        | 3 PF          |
+| RF02 - Editar Endereco                | EE   | 1   | 4   | Baixa        | 3 PF          |
+| RF03 - Excluir Endereco               | EE   | 1   | 4   | Baixa        | 3 PF          |
+| RF04 - Pesquisar Endereco             | CE   | 1   | 4   | Baixa        | 3 PF          |
+| RF01 - Inserir Bairro                 | EE   | 1   | 2   | Baixa        | 3 PF          |
+| RF02 - Editar Bairro                  | EE   | 1   | 2   | Baixa        | 3 PF          |
+| RF03 - Excluir Bairro                 | EE   | 1   | 2   | Baixa        | 3 PF          |
+| RF04 - Pesquisar Bairro               | CE   | 1   | 2   | Baixa        | 3 PF          |
+| RF01 - Inserir Cidade                 | EE   | 1   | 2   | Baixa        | 3 PF          |
+| RF02 - Editar Cidade                  | EE   | 1   | 2   | Baixa        | 3 PF          |
+| RF03 - Excluir Cidade                 | EE   | 1   | 2   | Baixa        | 3 PF          |
+| RF04 - Pesquisar Cidade               | CE   | 1   | 2   | Baixa        | 3 PF          |
+| RF01 - Inserir Estado                 | EE   | 1   | 2   | Baixa        | 3 PF          |
+| RF02 - Editar Estado                  | EE   | 1   | 2   | Baixa        | 3 PF          |
+| RF03 - Excluir Estado                 | EE   | 1   | 2   | Baixa        | 3 PF          |
+| RF04 - Pesquisar Estado               | CE   | 1   | 2   | Baixa        | 3 PF          |
+| RF01 - Inserir TipoDeUsuario          | EE   | 1   | 2   | Baixa        | 3 PF          |
+| RF02 - Editar TipoDeUsuario           | EE   | 1   | 2   | Baixa        | 3 PF          |
+| RF03 - Excluir TipoDeUsuario          | EE   | 1   | 2   | Baixa        | 3 PF          |
+| RF04 - Pesquisar TipoDeUsuario        | CE   | 1   | 2   | Baixa        | 3 PF          |
+| RF01 - Inserir Consorcio              | EE   | 1   | 4   | Baixa        | 3 PF          |
+| RF02 - Editar Consorcio               | EE   | 1   | 4   | Baixa        | 3 PF          |
+| RF03 - Excluir Consorcio              | EE   | 1   | 4   | Baixa        | 3 PF          |
+| RF04 - Pesquisar Consorcio            | CE   | 1   | 4   | Baixa        | 3 PF          |
+| RF01 - Inserir ParticipacoesConsorcio | EE   | 3   | 5   | Baixa        | 3 PF          |
+| RF01 - Inserir Cobranca               | EE   | 2   | 5   | Baixa        | 3 PF          |
+| RF02 - Editar Cobranca                | EE   | 2   | 5   | Baixa        | 3 PF          |
+| RF03 - Excluir Cobranca               | EE   | 2   | 5   | Baixa        | 3 PF          |
+| RF04 - Pesquisar Cobranca             | CE   | 2   | 5   | Baixa        | 3 PF          |
+| RF01 - Inserir Pagamento              | EE   | 2   | 6   | Baixa        | 3 PF          |
+| RF02 - Editar Pagamento               | EE   | 2   | 6   | Baixa        | 3 PF          |
+| RF04 - Pesquisar Pagamento            | CE   | 2   | 6   | Baixa        | 3 PF          |
