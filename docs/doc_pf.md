@@ -369,3 +369,4 @@ direction RL
 | RF01 - Inserir Pagamento              | EE   | 2   | 6   | Baixa        | 3 PF          |
 | RF02 - Editar Pagamento               | EE   | 2   | 6   | Baixa        | 3 PF          |
 | RF04 - Pesquisar Pagamento            | CE   | 2   | 6   | Baixa        | 3 PF          |
+| **Total**                           |      |     |     |              | **198 PF**    
